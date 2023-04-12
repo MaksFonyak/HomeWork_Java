@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
-
+//1)Реализуйте структуру телефонной книги с помощью HashMap, учитывая,
+// что 1 человек может иметь несколько телефонов.
 public class PhoneBook {
     private HashMap<String, ArrayList<String>> phoneBook;
 
@@ -61,7 +62,7 @@ public class PhoneBook {
                     name = scanner.nextLine();
                     ArrayList<String> phoneNumbers = phoneBook.getPhoneNumbers(name);
                     if (phoneNumbers != null) {
-                        System.out.println(name + "номер телефона: ");
+                        System.out.println(name + " номер телефона: ");
                         for (String number : phoneNumbers) {
                             System.out.println(number);
                         }
